@@ -1,0 +1,39 @@
+/**
+ * Custom theme for reveal.js
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,300italic,700italic);
+/*********************************************
+* GLOBAL STYLES
+*********************************************/
+body {
+  background: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%);
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: .125em;
+  line-height: 1.25em;
+  color: black; }
+
+.slides {
+  display: inline-flex; }
+
+.title {
+  display: inline-flex !important;
+  flex-direction: column;
+  align-items: flex-start; }
+
+body:after {
+  content: url(../../images/logo.png);
+  position: fixed;
+  bottom: .25em;
+  right: 1em;
+  z-index: 100; }
+
+body:before {
+  content: "@thegabdom";
+  position: fixed;
+  font-size: .4em;
+  bottom: 1em;
+  left: 1em;
+  z-index: 100; }
