@@ -3,6 +3,7 @@
  *
  */
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,500,300italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Pacifico:400);
 /*********************************************
 * GLOBAL STYLES
 *********************************************/
@@ -15,23 +16,33 @@ body {
   line-height: 1.25em;
   color: black; }
 
-.slides {
-  display: inline-flex; }
+.slides section {
+  top: 40px !important; }
 
-.title {
-  display: inline-flex !important;
-  flex-direction: column;
-  align-items: flex-start; }
+.slides .first {
+  top: 140px !important; }
+
+.first {
+  font-size: 88px; }
+
+.subtitle {
+  font-size: 64px;
+  text-align: left;
+  margin-bottom: 96px; }
+
+.content .fragment {
+  padding: 24px;
+  text-transform: capitalize; }
 
 body:after {
-  content: url(../../images/logo.png);
+  content: url(../../images/gabi_dombrowski_urlQR.png);
   position: fixed;
   bottom: .25em;
   right: 1em;
   z-index: 100; }
 
 body:before {
-  content: "@thegabdom";
+  content: "@thegabdom | CC BY-SA 4.0";
   position: fixed;
   font-size: .4em;
   bottom: 1em;
