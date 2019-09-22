@@ -1,3 +1,0 @@
-Note:
-
-+ Blame the doc

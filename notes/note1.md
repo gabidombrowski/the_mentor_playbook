@@ -1,5 +1,0 @@
-Note:
-
-### Skills
-+ leadership
-+ communication

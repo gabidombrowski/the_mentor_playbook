@@ -10,7 +10,7 @@
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,500,300italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Pacifico:400);
+@import url(https://fonts.googleapis.com/css?family=Righteous&display=swap);
 
 /*********************************************
 * GLOBAL STYLES
@@ -25,27 +25,72 @@ body {
     color:black;
 }
 
-.slides section {
-    top: 40px !important;
+a {
+    color: #009981;
+    text-decoration: none;
+    font-size: 32px;
 }
 
-.slides .first {
-    top: 140px !important;
+.slides section {
+    top: 80px !important;
 }
 
 .first {
-    font-size: 88px;
+    font-size: 112px;
+    line-height: 1.5em;
+    margin-top: 140px !important;
+}
+
+.topic {
+    font-size: 96px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-wrapper.center {
+    justify-content: center;
+}
+
+.title {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #FFD0AE 65%);
+    font-family: 'Righteous', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 .subtitle {
-    font-size: 64px;
+    font-size: 72px;
     text-align: left;
-    margin-bottom: 96px;
+    margin-bottom: 56px;
 }
 
-.content .fragment {
-    padding: 24px;
-    text-transform: capitalize;
+.content {
+    padding-top: 96px;
+}
+
+.content p {
+    padding: 36px 0px;
+    font-size: 64px;
+}
+
+.content.single {
+    margin-top: 56px;
+}
+
+.links {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 72px;
+    text-align: left;
+    line-height: .45em;
+}
+
+.links a {
+    padding: 8px 96px;
 }
 
 body:after {
