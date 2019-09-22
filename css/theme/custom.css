@@ -44,7 +44,8 @@ a {
   font-family: 'Righteous', cursive;
   font-weight: 600;
   text-transform: uppercase;
-  font-style: italic; }
+  font-style: italic;
+  line-height: 1em; }
 
 .subtitle {
   font-size: 72px;
