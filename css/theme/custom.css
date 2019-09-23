@@ -10,70 +10,115 @@
 body {
   background: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%);
   font-family: "Poppins", sans-serif;
-  font-size: 3em;
+  font-size: 48px;
   font-weight: 500;
-  letter-spacing: .125em;
+  letter-spacing: .5rem;
   line-height: 1.25em;
   color: black; }
 
 a {
   color: #009981;
   text-decoration: none;
-  font-size: 32px; }
+  font-size: 2.5rem; }
 
 .slides section {
-  top: 80px !important; }
+  top: 1em !important; }
 
 .first {
-  font-size: 112px;
+  font-size: 8rem;
   line-height: 1.5em;
-  margin-top: 140px !important; }
+  margin-top: 10%; }
+  .first .title-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    padding: 0 2rem; }
 
 .topic {
-  font-size: 96px; }
+  font-size: 6rem; }
 
 .title-wrapper {
   display: flex;
   justify-content: flex-start; }
 
-.title-wrapper.center {
-  justify-content: center; }
-
 .title {
   background: #FFD0AE;
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1em;
-  transform: rotate(-4deg) skew(-5deg); }
+  transform: rotate(-4deg) skew(-5deg);
+  padding: 0 .75rem; }
 
 .subtitle {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #FFD0AE 65%);
-  font-size: 72px;
+  font-size: 4.5rem;
   font-style: italic;
   text-align: left;
   margin-bottom: 56px;
-  transform: rotate(0deg) skew(0deg); }
+  transform: rotate(0deg) skew(0deg);
+  padding: 0 .25rem; }
 
 .content {
-  padding-top: 96px; }
-
-.content p {
-  padding: 36px 0px;
-  font-size: 64px; }
+  padding-top: 4.5rem;
+  font-size: 3.5rem; }
+  .content p {
+    padding: 2rem 0; }
 
 .content.single {
-  margin-top: 56px; }
+  margin-top: 3rem; }
+
+.col-wrapper {
+  display: inline-flex;
+  width: 100%;
+  padding-right: 2em;
+  padding-left: 2em;
+  box-sizing: border-box;
+  justify-content: space-around; }
+
+.col {
+  display: inline-block;
+  width: 50%; }
+  .col ul {
+    list-style: none; }
+    .col ul li {
+      text-align: left;
+      padding: .25em 0; }
+      .col ul li .green {
+        color: green; }
+      .col ul li .red {
+        color: red; }
 
 .links {
   display: inline-flex;
   flex-direction: column;
-  margin-top: 72px;
+  margin-top: 4rem;
   text-align: left;
-  line-height: .45em; }
+  line-height: .5em; }
+  .links a {
+    padding: 1rem 4rem; }
 
-.links a {
-  padding: 8px 96px; }
+.category {
+  background: #009981;
+  display: inline-block;
+  padding: 0 1rem;
+  color: white;
+  font-family: 'Righteous', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 4rem;
+  margin-top: 3rem; }
+
+.category.pause {
+  margin-top: 20%; }
+
+.replace .fragment {
+  opacity: 0;
+  display: none; }
+
+.replace .fragment.current-fragment {
+  opacity: 1;
+  display: inline; }
 
 body:after {
   content: url(../../images/gabi_dombrowski_urlQR.png);
