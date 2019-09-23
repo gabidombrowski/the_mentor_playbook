@@ -82,7 +82,7 @@ a {
     list-style: none; }
     .col ul li {
       text-align: left;
-      padding: .25em 0; }
+      padding: 2rem 0; }
       .col ul li .green {
         color: green; }
       .col ul li .red {
