@@ -69,10 +69,8 @@ a {
 
 .col-wrapper {
   display: inline-flex;
-  width: 100%;
-  padding-right: 2em;
-  padding-left: 2em;
-  box-sizing: border-box;
+  padding-right: 1em;
+  padding-left: 1em;
   justify-content: space-around; }
 
 .col {
@@ -128,7 +126,7 @@ body:after {
   z-index: 100; }
 
 body:before {
-  content: "@thegabdom | License: CC BY-SA 4.0";
+  content: "@gabdom | License: CC BY-SA 4.0";
   position: fixed;
   font-size: .4em;
   bottom: 1em;
