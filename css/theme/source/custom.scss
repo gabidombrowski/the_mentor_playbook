@@ -32,7 +32,7 @@ a {
 }
 
 .slides section {
-    top: 1em !important;
+    top: .2em !important;
 }
 
 .first {
@@ -51,6 +51,51 @@ a {
     font-size: 6rem;
 }
 
+.topic.img.outlive .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/retro-flying-car.jpg);
+    background-position: center top;
+}
+
+.topic.img.requirements .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/baking.jpeg);
+    background-position: center bottom;
+}
+
+.topic.img.crystal-ball .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/crystal-ball.jpg);
+    background-position: center center;
+}
+
+.topic.img.to-sir .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/to-sir-with-love.jpg);
+    background-position: center center;
+}
+
+.topic.img.lucille .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/lucille.png);
+    background-position: center center;
+}
+
+.img.universe .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/universe.jpg);
+    background-position: center bottom;
+}
+
+.img.buddha .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/buddha.jpg);
+    background-position: center top;
+}
+
+.img.karate-kid .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/karate-kid.jpg);
+    background-position: center top;
+}
+
+.img.avasarala .slide-background-content {
+    background-image: linear-gradient(25deg, rgba(2,0,36,.3) 0%, rgba(93,9,121,.3) 50%, rgba(0,255,231,.2) 100%), url(/images/avasarala.gif);
+    background-position: center bottom;
+}
+
 .title-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -67,13 +112,13 @@ a {
 }
 
 .subtitle {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #FFD0AE 65%);
+    background: #FFD0AE;
     font-size: 4.5rem;
     font-style: italic;
     text-align: left;
     margin-bottom: 56px;
     transform: rotate(0deg) skew(0deg);
-    padding: 0 .25rem;
+    padding: 0 .5rem;
 }
 
 .content {
@@ -89,31 +134,23 @@ a {
     margin-top: 3rem;
 }
 
-.col-wrapper {
+ul {
+    list-style: none;
     display: inline-flex;
-    padding-right: 1em;
-    padding-left: 1em;
-    justify-content: space-around;
-}
+    flex-direction: column;
+    align-items: center;
 
-.col {
-    display: inline-block;
-    width: 50%;
+    li {
+        text-align: left;
+        padding: 2rem 0;
+        font-size: 3.5rem;
 
-    ul {
-        list-style: none;
+        .green {
+            color: green;
+        }
 
-        li {
-            text-align: left;
-            padding: 2rem 0;
-
-            .green {
-                color: green;
-            }
-
-            .red {
-                color: red;
-            }
+        .red {
+            color: red;
         }
     }
 }
@@ -147,14 +184,22 @@ a {
     margin-top: 20%;
 }
 
-.replace .fragment {
+.replace.fragment {
 	opacity: 0;
     display: none;
 }
 
-.replace .fragment.current-fragment {
+.replace.fragment.current-fragment {
 	opacity: 1;
-    display: inline;
+    display: inline; 
+}
+
+.no-2 {
+    font-size: 5rem;
+}
+
+.no-3 {
+    font-size: 6.5rem;
 }
 
 body:after {
