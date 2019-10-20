@@ -146,11 +146,11 @@ ul {
         font-size: 3.5rem;
 
         .green {
-            color: green;
+            color: #009981;
         }
 
         .red {
-            color: red;
+            color: #db145d;
         }
     }
 }
@@ -200,6 +200,14 @@ ul {
 
 .no-3 {
     font-size: 6.5rem;
+}
+
+.bad {
+    color: #db145d;
+}
+
+.good {
+    color: #009981;
 }
 
 body:after {

@@ -113,9 +113,9 @@ ul {
     padding: 2rem 0;
     font-size: 3.5rem; }
     ul li .green {
-      color: green; }
+      color: #009981; }
     ul li .red {
-      color: red; }
+      color: #db145d; }
 
 .links {
   display: inline-flex;
@@ -154,6 +154,12 @@ ul {
 
 .no-3 {
   font-size: 6.5rem; }
+
+.bad {
+  color: #db145d; }
+
+.good {
+  color: #009981; }
 
 body:after {
   content: url(../../images/gabi_dombrowski_urlQR.png);
