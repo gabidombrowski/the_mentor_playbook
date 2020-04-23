@@ -37,40 +37,59 @@ a {
   font-size: 6rem; }
 
 .topic.img.outlive .slide-background-content {
-  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/retro-flying-car.jpg);
-  background-position: center top; }
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/wall-e.jpg);
+  background-position: center top;
+  opacity: .8; }
 
 .topic.img.requirements .slide-background-content {
-  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/baking.jpeg);
-  background-position: center bottom; }
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/requirements.jpg);
+  background-position: center top;
+  opacity: .8; }
 
 .topic.img.crystal-ball .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/crystal-ball.jpg);
-  background-position: center center; }
+  background-position: center center;
+  opacity: .8; }
 
 .topic.img.to-sir .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/to-sir-with-love.jpg);
-  background-position: center center; }
+  background-position: center center;
+  opacity: .8; }
 
 .topic.img.lucille .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/lucille.png);
-  background-position: center center; }
+  background-position: center center;
+  opacity: .8; }
 
 .img.universe .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/universe.jpg);
-  background-position: center bottom; }
+  background-position: center bottom;
+  opacity: .8; }
 
 .img.buddha .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/buddha.jpg);
-  background-position: center top; }
+  background-position: center top;
+  opacity: .8; }
 
 .img.karate-kid .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/karate-kid.jpg);
-  background-position: center top; }
+  background-position: center top;
+  opacity: .8; }
 
 .img.avasarala .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/avasarala.gif);
-  background-position: center bottom; }
+  background-position: center bottom;
+  opacity: .8; }
+
+.topic.img.keanu .slide-background-content {
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/keanu.jpg);
+  background-position: center top;
+  opacity: .8; }
+
+.topic.img.grow .slide-background-content {
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/upgrade.gif);
+  background-position: center top;
+  opacity: .8; }
 
 .title-wrapper {
   display: flex;
