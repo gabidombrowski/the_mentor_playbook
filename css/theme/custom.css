@@ -36,13 +36,23 @@ a {
 .topic {
   font-size: 6rem; }
 
+.topic.img.yoda .slide-background-content {
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/yoda.jpg);
+  background-position: center top;
+  opacity: .8; }
+
+.topic.img.matrix .slide-background-content {
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/matrix.jpg);
+  background-position: center top;
+  opacity: .8; }
+
 .topic.img.outlive .slide-background-content {
   background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/wall-e.jpg);
   background-position: center top;
   opacity: .8; }
 
-.topic.img.requirements .slide-background-content {
-  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/requirements.jpg);
+.topic.img.stand .slide-background-content {
+  background-image: linear-gradient(25deg, rgba(2, 0, 36, 0.3) 0%, rgba(93, 9, 121, 0.3) 50%, rgba(0, 255, 231, 0.2) 100%), url(../../../images/stand-and-deliver.jpg);
   background-position: center top;
   opacity: .8; }
 
