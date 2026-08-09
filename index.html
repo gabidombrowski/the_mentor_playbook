@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <!-- No maximum-scale/user-scalable=no: blocking pinch-zoom fails
+         WCAG 1.4.4, and people do zoom decks on phones. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>The Mentor Playbook</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/custom.css" />
+    <meta
+      name="description"
+      content="The Mentor Playbook — a talk on how to mentor well, by Gabriela Dombrowski."
+    />
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,700&family=Righteous&display=swap"
+    />
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? "css/print/pdf.css"
-        : "css/print/paper.css";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
 
   <body>
@@ -33,10 +30,10 @@
       <div class="slides">
         <section class="first">
           <div class="title-wrapper center">
-            <p class="title">The Mentor Playbook</p>
+            <h1 class="title">The Mentor Playbook</h1>
           </div>
           <aside class="notes">
-            <p>Twitter handle, license, QR code</p>
+            <p>License, QR code</p>
             <p>Mentor Director, Mentor Playbook</p>
             <p>
               Goal of talk: to demistify mentoring & encourage others to mentor
@@ -48,7 +45,7 @@
 			</section>
 			<section class="first">
 				<div class="title-wrapper center">
-					<p class="title">The Mentor Playbook</p>
+					<h2 class="title">The Mentor Playbook</h2>
 				</div>
 				<aside class="notes">
 					<p>Twitter handle, license, QR code</p>
@@ -58,7 +55,7 @@
 			</section> -->
         <section class="topic img karate-kid">
           <div class="title-wrapper">
-            <p class="title">What is mentoring?</p>
+            <h2 class="title">What is mentoring?</h2>
           </div>
           <aside class="notes">
             <p>
@@ -72,7 +69,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">When does it happen?</p>
+            <h2 class="title subtitle">When does it happen?</h2>
           </div>
           <div class="content">
             <p class="fragment">1:1 relationship</p>
@@ -88,12 +85,12 @@
         </section>
         <section class="topic img yoda">
           <div class="title-wrapper">
-            <p class="title">What do you need?</p>
+            <h2 class="title">What do you need?</h2>
           </div>
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">You need...</p>
+            <h2 class="title subtitle">You need...</h2>
           </div>
           <div class="content">
             <p class="fragment">Time</p>
@@ -109,7 +106,7 @@
         </section>
         <section class="topic img stand">
           <div class="title-wrapper">
-            <p class="title">The Learning Process</p>
+            <h2 class="title">The Learning Process</h2>
           </div>
         </section>
         <section
@@ -119,8 +116,15 @@
           data-transition="fade none"
         >
           <div class="title-wrapper">
-            <p class="title subtitle">Stages of Competence</p>
+            <h2 class="title subtitle">Stages of Competence</h2>
           </div>
+          <!-- The diagram is a CSS background, so it carries no alt text of
+               its own. This is its text alternative. -->
+          <p class="visually-hidden">
+            A diagram of the four stages of competence, in order: unconscious
+            incompetence, conscious incompetence, conscious competence, and
+            unconscious competence.
+          </p>
           <aside class="notes">
             <p>
               ANYTHING you've ever learned or will learn will take you through
@@ -159,7 +163,7 @@
         </section>
         <section data-transition="none fade">
           <div class="title-wrapper">
-            <p class="title subtitle">Stages of Competence</p>
+            <h2 class="title subtitle">Stages of Competence</h2>
           </div>
           <div class="content single">
             <p>Reflective competence</p>
@@ -170,7 +174,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Jargon</p>
+            <h2 class="title subtitle">Jargon</h2>
           </div>
           <div class="content">
             <p class="fragment fade-in-then-out">
@@ -190,7 +194,7 @@
         </section>
         <section class="topic img crystal-ball">
           <div class="title-wrapper">
-            <p class="title">Am I ready?</p>
+            <h2 class="title">Am I ready?</h2>
           </div>
           <aside class="notes">
             <p>
@@ -205,12 +209,12 @@
         </section>
         <section class="topic img to-sir">
           <div class="title-wrapper">
-            <p class="title">Who to mentor?</p>
+            <h2 class="title">Who to mentor?</h2>
           </div>
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Mentor someone...</p>
+            <h2 class="title subtitle">Mentor someone...</h2>
           </div>
           <div class="content">
             <p class="fragment">Who asks for help</p>
@@ -226,7 +230,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Mentor someone...</p>
+            <h2 class="title subtitle">Mentor someone...</h2>
           </div>
           <div class="content single">
             <p>Inside & outside of your network</p>
@@ -241,7 +245,7 @@
         </section>
         <section class="topic img lucille">
           <div class="title-wrapper">
-            <p class="title">How should we mentor?</p>
+            <h2 class="title">How should we mentor?</h2>
           </div>
           <aside class="notes">
             <p>
@@ -251,9 +255,9 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="fade none">
-            <p class="title subtitle">The essential...</p>
+        <section data-transition="fade none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">The essential...</h2>
           </div>
           <div class="content">
             <p class="fragment">Building trust</p>
@@ -265,9 +269,9 @@
             <p>So that you can build credibility and effectively mentor</p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="none none">
-            <p class="title subtitle">The essential...</p>
+        <section data-transition="none none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">The essential...</h2>
           </div>
           <div class="content">
             <p class="fragment">Assume infinite intelligence, zero knowledge</p>
@@ -279,7 +283,7 @@
         </section>
         <section data-transition="none fade">
           <div class="title-wrapper">
-            <p class="title subtitle">The essential...</p>
+            <h2 class="title subtitle">The essential...</h2>
           </div>
           <div class="content single">
             <p>Colleague first, mentor second</p>
@@ -293,7 +297,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Don't know?</p>
+            <h2 class="title subtitle">Don't know?</h2>
           </div>
           <div class="content single">
             <div class="fragment category">
@@ -313,9 +317,9 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="fade none">
-            <p class="title subtitle">The practical...</p>
+        <section data-transition="fade none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">The practical...</h2>
           </div>
           <div class="content">
             <p class="fragment">Help prioritize</p>
@@ -343,7 +347,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Remove roadblocks</p>
+            <h2 class="title subtitle">Remove roadblocks</h2>
           </div>
           <div class="fragment category">
             <p>Fear</p>
@@ -371,7 +375,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Remove roadblocks</p>
+            <h2 class="title subtitle">Remove roadblocks</h2>
           </div>
           <div class="fragment category">
             <p>Impostor phenomenon</p>
@@ -395,7 +399,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Formulate good responses</p>
+            <h2 class="title subtitle">Formulate good responses</h2>
           </div>
           <div class="content">
             <p class="fragment">Approachable</p>
@@ -417,7 +421,7 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">Formulate good responses</p>
+            <h2 class="title subtitle">Formulate good responses</h2>
           </div>
           <div class="content">
             <p class="fragment">Encouraging</p>
@@ -442,9 +446,9 @@
         </section>
         <section>
           <div class="title-wrapper">
-            <p class="title subtitle">
+            <h2 class="title subtitle">
               Formulate <span class="bad">bad</span> responses
-            </p>
+            </h2>
           </div>
           <div class="content">
             <ul>
@@ -469,11 +473,11 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="fade none">
-            <p class="title subtitle">
+        <section data-transition="fade none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">
               <span>Formulate <span class="good">good</span> responses</span>
-            </p>
+            </h2>
           </div>
           <div class="content">
             <ul>
@@ -495,11 +499,11 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="none fade">
-            <p class="title subtitle">
+        <section data-transition="none fade">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">
               <span>Formulate <span class="good">good</span> responses</span>
-            </p>
+            </h2>
           </div>
           <div class="content">
             <ul>
@@ -520,12 +524,12 @@
         </section>
         <section class="topic img grow">
           <div class="title-wrapper">
-            <p class="title">Mentor better</p>
+            <h2 class="title">Mentor better</h2>
           </div>
         </section>
         <section data-transition="none none">
           <div class="title-wrapper">
-            <p class="title subtitle">Mentor better...</p>
+            <h2 class="title subtitle">Mentor better...</h2>
           </div>
           <div class="content single">
             <p>Self care</p>
@@ -538,10 +542,10 @@
         </section>
         <section data-transition="none none">
           <div class="title-wrapper">
-            <p class="title subtitle">Mentor better...</p>
+            <h2 class="title subtitle">Mentor better...</h2>
           </div>
           <div class="content single">
-            <p class="step-fade-in-then-out">Emotional intelligence</p>
+            <p>Emotional intelligence</p>
           </div>
           <aside class="notes">
             <p>
@@ -562,10 +566,10 @@
         </section>
         <section data-transition="none fade">
           <div class="title-wrapper">
-            <p class="title subtitle">Mentor better...</p>
+            <h2 class="title subtitle">Mentor better...</h2>
           </div>
           <div class="content single">
-            <p class="step-fade-in-then-out">
+            <p>
               Cultural & personal sensitivities
             </p>
           </div>
@@ -581,12 +585,12 @@
         </section>
         <section class="topic img outlive">
           <div class="title-wrapper">
-            <p class="title">Outlive the relationship</p>
+            <h2 class="title">Outlive the relationship</h2>
           </div>
         </section>
         <section data-transition="fade none">
           <div class="title-wrapper">
-            <p class="title subtitle">Future benefits</p>
+            <h2 class="title subtitle">Future benefits</h2>
           </div>
           <div class="content single">
             <p>Focus on character development</p>
@@ -601,7 +605,7 @@
         </section>
         <section data-transition="none fade">
           <div class="title-wrapper">
-            <p class="title subtitle">Future benefits</p>
+            <h2 class="title subtitle">Future benefits</h2>
           </div>
           <div class="content single">
             <p>Forever mentor</p>
@@ -615,20 +619,20 @@
         </section>
         <section class="topic img avasarala">
           <div class="title-wrapper">
-            <p class="title subtitle">Ask for feedback</p>
+            <h2 class="title subtitle">Ask for feedback</h2>
           </div>
           <aside class="notes">
             <p>Reiterate and improve based on that feedback</p>
           </aside>
         </section>
-        <section class="topic img keanu">
+        <section class="topic img rogers">
           <div class="title-wrapper">
-            <p class="title">Why mentor?</p>
+            <h2 class="title">Why mentor?</h2>
           </div>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="fade none">
-            <p class="title subtitle">Mentor because...</p>
+        <section data-transition="fade none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">Mentor because...</h2>
           </div>
           <div class="content">
             <p class="fragment">Develop skills</p>
@@ -649,9 +653,9 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="none none">
-            <p class="title subtitle">Mentor because...</p>
+        <section data-transition="none none">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">Mentor because...</h2>
           </div>
           <div class="content single">
             <p>Build community</p>
@@ -663,9 +667,9 @@
             </p>
           </aside>
         </section>
-        <section>
-          <div class="title-wrapper" data-transition="none fade">
-            <p class="title subtitle">Mentor because...</p>
+        <section data-transition="none fade">
+          <div class="title-wrapper">
+            <h2 class="title subtitle">Mentor because...</h2>
           </div>
           <div class="content single">
             <p>Nurture belonging</p>
@@ -685,7 +689,7 @@
         </section>
         <section class="first">
           <div class="title-wrapper center">
-            <p class="title">The Mentor Playbook</p>
+            <h2 class="title">The Mentor Playbook</h2>
           </div>
           <aside class="notes">
             <p>
@@ -701,7 +705,7 @@
         </section>
         <section class="topic">
           <div class="title-wrapper">
-            <p class="title">References</p>
+            <h2 class="title">References</h2>
           </div>
           <div class="links">
             <a
@@ -732,7 +736,7 @@
         </section>
         <section class="topic">
           <div class="title-wrapper">
-            <p class="title">Licensing</p>
+            <h2 class="title">Licensing</h2>
           </div>
           <div class="links">
             <a
@@ -773,12 +777,29 @@
       </div>
     </div>
 
-    <script src="js/reveal.js"></script>
+    <!-- Persistent chrome, shown on every slide. Sits outside .reveal so
+         reveal.js doesn't treat it as slide content. -->
+    <!-- The licence lives on its own slide at the end and in LICENSE; CC BY-SA
+         doesn't require a per-slide notice. The QR carries attribution on any
+         slide someone photographs. -->
+    <footer class="deck-chrome">
+      <a class="deck-chrome__qr" href="https://digitallotusdev.com">
+        <img
+          src="images/digitallotusdev_qr.png"
+          alt="QR code linking to digitallotusdev.com"
+          width="128"
+          height="128"
+        />
+      </a>
+    </footer>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
 
     <script>
-      // More info about config & dependencies:
-      // - https://github.com/hakimel/reveal.js#configuration
-      // - https://github.com/hakimel/reveal.js#dependencies
+      // Config reference: https://revealjs.com/config/
+      // The deck fills the viewport rather than scaling a fixed-size canvas,
+      // so slide styles are written against the real viewport size.
       Reveal.initialize({
         controls: false,
         width: "100%",
@@ -786,13 +807,8 @@
         minScale: 1,
         maxScale: 1,
         hash: true,
-        dependencies: [
-          { src: "plugin/markdown/marked.js" },
-          { src: "plugin/markdown/markdown.js" },
-          { src: "plugin/notes/notes.js", async: true },
-          { src: "plugin/highlight/highlight.js", async: true },
-        ],
         transition: "fade",
+        plugins: [RevealNotes],
       });
     </script>
   </body>

@@ -1,0 +1,282 @@
+/**
+ * The Mentor Playbook — custom reveal.js theme
+ *
+ * Hand-maintained plain CSS. Layered on top of dist/reveal.css, which
+ * provides layout only; everything visual below is ours.
+ *
+ * Fonts (Poppins, Righteous) are loaded via <link> in index.html.
+ */
+
+:root {
+  /* Palette.
+     The teal and pink were darkened from #009981 / #db145d, which scored
+     1.7:1 and 2.4:1 against the lightest part of the page gradient — below
+     the WCAG 3:1 minimum for large text. These clear it while keeping the
+     same hue. For more headroom on a washed-out projector, #004F42 and
+     #8B0D3B reach 4.5:1. */
+  --peach: #ffd0ae; /* title plates */
+  --teal: #006c5b; /* links, "good", category plates */
+  --pink: #bc1150; /* "bad" */
+  --ink: #000;
+
+  /* The violet-to-aqua wash used on the page and over every photo */
+  --wash: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 0.3) 0%,
+    rgba(93, 9, 121, 0.3) 50%,
+    rgba(0, 255, 231, 0.2) 100%
+  );
+
+  --font-display: "Righteous", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+body {
+  background: var(--wash);
+  font-family: var(--font-body);
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  line-height: 1.25em;
+  color: var(--ink);
+}
+
+/* reveal 5 adds .reveal-viewport to <body> and sets line-height:1 on it,
+   which outranks a bare `body` selector. Re-assert ours so it resolves to a
+   fixed 60px and inherits, the way it did before the upgrade. */
+body.reveal-viewport {
+  line-height: 1.25em;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+/* Text alternatives for slides whose content is carried by a background
+   image: available to screen readers, never painted. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.slides section {
+  top: 0.2em !important;
+  /* reveal 3 shipped this padding on every section and the slide styles
+     assume it; reveal 5 dropped it. */
+  padding: 20px 0;
+}
+
+/*********************************************
+ * PHOTO BACKGROUNDS
+ *
+ * reveal copies each <section>'s classes onto its generated
+ * .slide-background element, so `.img.yoda` below matches the
+ * background layer, and --slide-image cascades into its content div.
+ *
+ * To add a photo slide: <section class="topic img NAME"> plus one
+ * --slide-image line here.
+ *********************************************/
+.img .slide-background-content {
+  background-image: var(--wash), var(--slide-image);
+  background-position: center var(--slide-image-y, top);
+  opacity: 0.8;
+}
+
+.img.karate-kid {
+  --slide-image: url(../images/karate-kid.jpg);
+}
+.img.yoda {
+  --slide-image: url(../images/yoda.jpg);
+}
+.img.stand {
+  --slide-image: url(../images/stand-and-deliver.jpg);
+}
+.img.crystal-ball {
+  --slide-image: url(../images/crystal-ball.jpg);
+  --slide-image-y: center;
+}
+.img.to-sir {
+  --slide-image: url(../images/to-sir-with-love.jpg);
+  --slide-image-y: center;
+}
+.img.lucille {
+  --slide-image: url(../images/lucille.png);
+  --slide-image-y: center;
+}
+.img.grow {
+  --slide-image: url(../images/upgrade.gif);
+}
+.img.outlive {
+  --slide-image: url(../images/wall-e.jpg);
+}
+.img.avasarala {
+  --slide-image: url(../images/avasarala.gif);
+  --slide-image-y: bottom;
+}
+.img.rogers {
+  --slide-image: url(../images/mister-rogers.jpg);
+}
+
+/* Not currently used by any slide — kept so the photos stay one line away. */
+.img.matrix {
+  --slide-image: url(../images/matrix.jpg);
+}
+.img.universe {
+  --slide-image: url(../images/universe.jpg);
+  --slide-image-y: bottom;
+}
+
+/*********************************************
+ * TITLES
+ *********************************************/
+.title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  background: var(--peach);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1em;
+  transform: rotate(-4deg) skew(-5deg);
+  padding: 0 0.75rem;
+}
+
+.subtitle {
+  background: var(--peach);
+  font-size: 4.5rem;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 56px;
+  transform: rotate(0deg) skew(0deg);
+  padding: 0 0.5rem;
+}
+
+/* Opening and closing slides: big, centred title */
+.first {
+  font-size: 8rem;
+  line-height: 1.5em;
+  margin-top: 10%;
+}
+
+.first .title-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+/* Section-break slides, usually over a photo */
+.topic {
+  font-size: 6rem;
+}
+
+/*********************************************
+ * BODY CONTENT
+ *********************************************/
+.content {
+  padding-top: 4.5rem;
+  font-size: 3.5rem;
+}
+
+.content p {
+  padding: 2rem 0;
+}
+
+/* One-idea-per-slide variant */
+.content.single {
+  margin-top: 3rem;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  text-align: left;
+  padding: 2rem 0;
+  font-size: 3.5rem;
+}
+
+/* Inline ✔ / ✗ markers on the good/bad response slides */
+ul li .green,
+.good {
+  color: var(--teal);
+}
+
+ul li .red,
+.bad {
+  color: var(--pink);
+}
+
+/* Solid plate used to name a roadblock (Fear, Impostor phenomenon, ...) */
+.category {
+  background: var(--teal);
+  display: inline-block;
+  padding: 0 1rem;
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+/*********************************************
+ * REFERENCE / LICENCE SLIDES
+ *********************************************/
+.links {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  text-align: left;
+  line-height: 0.5em;
+}
+
+.links a {
+  padding: 1rem 4rem;
+}
+
+.cc-text {
+  font-size: 36px;
+}
+
+/*********************************************
+ * PERSISTENT CHROME — licence and QR on every slide
+ *********************************************/
+
+/* The <footer> is only a grouping hook; its children position themselves. */
+.deck-chrome {
+  display: contents;
+}
+
+.deck-chrome__qr {
+  position: fixed;
+  bottom: 0.25em;
+  right: 1em;
+  z-index: 100;
+  line-height: 0;
+}
+
+.deck-chrome__qr img {
+  display: block;
+  width: 128px;
+  height: 128px;
+}
